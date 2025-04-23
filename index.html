@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Movie Theater</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="theater">
+    <h1>My Movies 🍿🎬</h1>
+    
+    <div class="screen">
+        <marquee behavior="scroll" direction="left" scrollamount="6" style="color: rgb(233, 225, 225); font-size: 1.25em; margin-bottom: 10px; text-shadow: 0 0 10px red">
+            Welcome to Aria's Movies!
+          </marquee>
+      <video controls>
+        <source src="media/trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <div class="buttons">
+      <button onclick="document.querySelector('video').currentTime = 0; document.querySelector('video').play();">Play Again</button>
+      <button onclick="alert('Thanks for rating!')">Rate Movie</button>
+    </div>
+  </section>
+</body>
+</html>
